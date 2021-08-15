@@ -19,9 +19,9 @@ def person(name,age=31): # Defaul Argument
     print(name)
     print(age)
 person(name="Rohith",age=31) # Keyword Argument'''
+'''
 
-
-def sum(*b):
+def sum(*b): ## *args (Argument Variables)
     c=0
 
     for i in b:
@@ -30,3 +30,13 @@ def sum(*b):
 
 sum(1,2,3,4)
 
+'''
+
+
+
+def person(name,**data): #*kwargs (Keyword arguments)
+    print(name)
+
+    for i,j in data.items():
+        print(i,j)
+person("Rohith",age=31,city='Bangalore')
